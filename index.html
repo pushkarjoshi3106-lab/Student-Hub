@@ -1,59 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub-Home</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student-Hub</title>
+  </head>
+  <body>
+    <!--Navbar -->
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"> <img src="images/generated-image.png" alt="Student Hub Logo"></a> </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon">📚</span>
+          <span class="logo-text">Student Hub</span>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li>
+            <a href="notes.html" class="nav-link">Notes</a>
+          </li>
+          <li>
+            <a href="subjects.html" class="nav-link">Subjects</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
     </header>
-    <!--hero section-->
+    <!--Hero Section -->
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Student Hub</h1>
-                <p>Organise your notes,track subjects,and prepare smartly for exams.</p>
-                <a href="notes.html" class="btn">Browse Notes</a>
-            </div>
-        </section>
-        <!--features section-->
-        <section class="features">
-            <h2> What you can do here</h2>
-            <div class="features-grid">
-            <div class="features-card">
-                <h3>Study Notes</h3>
-                <p>Find organised notes for different years and subjects in one place.</p>
-                <a href="notes.html">Go to Notes</a>
-                </div>
-                <div class="features-card">
-                    <h3>Subjects Overview</h3>
-                    <p>See all your subjects and plan your study schedule.</p>
-                    <a href="subjects.html">View Subjects</a>
-                </div>
-                     <div class="features-card">
-                    <h3>About Student Hub</h3>
-                    <p>Know why this project was created and who built it.</p>
-                    <a href="about.html">View About</a>
-            </div>
-            </div>
-        </section>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-tagline">BCA Notes . PYQs . Planner.</p>
+          <h1>Organise your notes and study smarter.</h1>
+          <p class="hero-subtext">
+            All your BCA semesters' notes and subjects in one simple,clean
+            place.
+          </p>
+          <a href="notes.html" class="btn-primary-btn">Browse Notes</a>
+        </div>
+      </section>
+      <!--features section-->
+      <section class="features">
+        <h2>What you can do here</h2>
+        <div class="features-grid">
+          <div class="features-card">
+            <span class="features-icon"> 📝</span>
+            <h3>Study Notes</h3>
+            <p>
+              Find organised notes for diefferent years and subjects in one
+              place.
+            </p>
+            <a href="notes.html" class="text-link">View Notes</a>
+          </div>
+          <div class="features-card">
+            <span class="features-icon"> 📊</span>
+            <h3>Subjects Overview</h3>
+            <p>
+              See all your subjects and plan your study schedule semester-wise.
+            </p>
+            <a href="subjects.html" class="text-link">View subjects</a>
+          </div>
+          <div class="features-card">
+            <span class="features-icon"> 💡</span>
+            <h3>About Student-Hub</h3>
+            <p>
+              Learn about the mission and vision behind Student-Hub and how it
+              can help you succeed in your BCA journey.
+            </p>
+            <a href="about.html" class="text-link">View About</a>
+          </div>
+        </div>
+      </section>
     </main>
-     <footer class="footer">
-    <p>© 2026 Student Hub. Made for students,by a student.</p>
-    <p>Built by Pushkar Joshi(BCA Student).</p>
-     </footer>
-</body>
+    <!--Footer-->
+    <footer>
+      <p>© 2026 Student Hub. Made for students, by a student.</p>
+      <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
+    </footer>
+  </body>
 </html>

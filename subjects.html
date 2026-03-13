@@ -1,96 +1,119 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub-Subject</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Hub - Subjects</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"> <img src="images/generated-image.png" alt="Student Hub Logo"></a> </div>
-            <ul class="nav-links">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="subjects.html" class="active">Subjects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!--hero section-->
-    <main>
-        <section class="page-header">
-            <h1>Subjects Overview</h1>
-            <p>Keep track of your subjects semester-wise.</p>
-        </section>
-        <section class="subjects-grid">
-            <div class="subject-card">
-            <h2>BCA 1st semseter</h2>
-            <ul>
-                <li>Computer Fundamentals</li>
-                <li>Programming in C</li>
-                <li>Mathematics-I</li>
-                <li>Business Communication</li>
-                <li>Principle of management</li>
-            </ul>
-            </div>
-            <div class="subject-card">
-            <h2>BCA 2nd semseter</h2>
-            <ul>
-                <li>Organisation Behaviour</li>
-                <li>Digital Electronics and Computer Organisation</li>
-                <li>Mathematics-II</li>
-                <li>Financial Accounting & Management</li>
-                <li>Programming in C++</li>
-            </ul>
-            </div>
-                <div class="subject-card">
-            <h2>BCA 3rd semseter</h2>
-            <ul>    
-                <li>Object Oriented Programing using c++</li>
-                <li>Data Structure using C & C++</li>
-                <li>Computer Architecture & Assembly Language</li>
-                <li>Bussiness Economics</li>
-                <li>Elements Of Statistics</li>
-            </ul>
-            </div>
-                 <div class="subject-card">
-            <h2>BCA 4th semseter</h2>
-            <ul>    
-                <li>Computer Graphics & Multimedia Application</li>
-                <li>Operating System</li>
-                <li>Software Engineering</li>
-                <li>Optimization Techniques</li>
-                <li>Mathematics-III</li>
-            </ul>
-            </div>
-                 <div class="subject-card">
-            <h2>BCA 5th semseter</h2>
-            <ul>
-                <li>Database Management System</li>
-                <li>Java</li>
-                <li>Computer Networks</li>
-                <li>Numerical Methods</li>
-                </ul>
-            </div>
-                 <div class="subject-card">
-            <h2>BCA 6th semseter</h2>
-            <ul>
-                <li>Computer Network Security</li>
-                <li>Analysis Design & Implentation</li>
-                <li>E-Commerce</li>
-                <li>Knowledge Management</li>
-                </ul>
-            </div>
-        </section>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon">📚</span>
+          <span class="logo-text">Student Hub</span>
+        </div>
 
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="notes.html" class="nav-link">Notes</a></li>
+          <li><a href="subjects.html" class="nav-link active">Subjects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Dark / Light mode toggle -->
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <h1>Subjects Overview</h1>
+        <p>Keep track of your BCA subjects semester-wise.</p>
+      </section>
+
+      <section class="subjects-grid">
+        <div class="subject-card" data-semester="1">
+          <h2>🎓 BCA 1st Semester</h2>
+          <ul>
+            <li>Computer Fundamentals</li>
+            <li>Programming in C</li>
+            <li>Mathematics-I</li>
+            <li>Business Communication</li>
+            <li>Principles of Management</li>
+          </ul>
+        </div>
+
+        <div class="subject-card" data-semester="2">
+          <h2>🎓 BCA 2nd Semester</h2>
+          <ul>
+            <li>Organisational Behaviour</li>
+            <li>Digital Electronics & Computer Organisation</li>
+            <li>Mathematics-II</li>
+            <li>Financial Accounting & Management</li>
+            <li>Programming in C++</li>
+          </ul>
+        </div>
+
+        <div class="subject-card" data-semester="3">
+          <h2>🎓 BCA 3rd Semester</h2>
+          <ul>
+            <li>Object Oriented Programming using C++</li>
+            <li>Data Structures using C & C++</li>
+            <li>Computer Architecture & Assembly Language</li>
+            <li>Business Economics</li>
+            <li>Elements of Statistics</li>
+          </ul>
+        </div>
+
+        <div class="subject-card" data-semester="4">
+          <h2>🎓 BCA 4th Semester</h2>
+          <ul>
+            <li>Computer Graphics & Multimedia Applications</li>
+            <li>Operating System</li>
+            <li>Software Engineering</li>
+            <li>Optimization Techniques</li>
+            <li>Mathematics-III</li>
+          </ul>
+        </div>
+
+        <div class="subject-card" data-semester="5">
+          <h2>🎓 BCA 5th Semester</h2>
+          <ul>
+            <li>Database Management System</li>
+            <li>Java</li>
+            <li>Computer Networks</li>
+            <li>Numerical Methods</li>
+          </ul>
+        </div>
+
+        <div class="subject-card" data-semester="6">
+          <h2>🎓 BCA 6th Semester</h2>
+          <ul>
+            <li>Computer Network Security</li>
+            <li>Analysis, Design & Implementation</li>
+            <li>E‑Commerce</li>
+            <li>Knowledge Management</li>
+          </ul>
+        </div>
+      </section>
     </main>
-     <footer class="footer">
-    <p>&copy; 2026 Student Hub. Made for students,by a student.</p>
-    <p>Built by Pushkar Joshi(BCA Student).</p>
-     </footer>
-</body>
+
+    <footer class="footer">
+      <p>© 2026 Student Hub. Made for students, by a student.</p>
+      <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
+    </footer>
+
+    <!-- Same theme toggle JS as index.html -->
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        const isDark = body.classList.toggle("dark-theme");
+        toggleBtn.textContent = isDark ? "☀️" : "🌙";
+      });
+    </script>
+  </body>
 </html>

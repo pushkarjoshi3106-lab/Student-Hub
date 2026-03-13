@@ -1,63 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Student Hub-Notes</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html"> <img src="images/generated-image.png" alt="Student Hub Logo"></a> </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="notes.html" class="active">Notes</a></li>
-                <li><a href="subjects.html">Subjects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+  </head>
+  <body>
+    <!--Navbar -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span class="logo-icon">📚</span>
+          <span class="logo-text">Student Hub</span>
+        </div>
+        <ul>
+          <li>
+            <a href="index.html" class="nav-link active">Home</a>
+          </li>
+          <li>
+            <a href="notes.html" class="nav-link">Notes</a>
+          </li>
+          <li>
+            <a href="subjects.html" class="nav-link">Subjects</a>
+          </li>
+          <li>
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li>
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
     </header>
-    <!--hero section-->
     <main>
-        <section class="page-header">
-            <h1>Study Notes</h1>
-            <p>Find organised notes on for your subjects in one place.</p>
-        </section>
-        <section class="notes-grid">
-            <article class="note-card">
-                <h2>Computer Graphics & Multimedia Application</h2>
-                <p> Graphic primitives,2d/3d transformations,curves,surface.</p>
-                <button class="btn-secondary">View Notes</button>
-            </article>
-             <article class="note-card">
-                <h2>Software Engineering</h2>
-                <p> Includes software devlopment life cycle,requiremnt analysis,design principles.</p>
-                <button class="btn-secondary">View Notes</button>
-            </article>
-            <article class="note-card">
-                <h2>Operating Systems</h2>
-                <p> Includes process management, memory management, file systems.</p>
-                <button class="btn-secondary">View Notes</button>
-            </article>
-            <article class="note-card">
-                <h2>Database Management Systems</h2>
-                <p> Includes relational model,sql queries,normalization.</p>
-                <button class="btn-secondary">View Notes</button>
-                </article>
-                <article class="note-card">
-                <h2>MathematicsIII</h2>
-                <p> Complex variables,sequences/series,convergence,Fourier series.</p>
-                <button class="btn-secondary">View Notes</button>
-            </article>
-        </section>
-                
+      <!--Header-->
+      <section class="page-header">
+        <h1>Study Notes</h1>
+        <p>Find orgainsed notes for your BCA subjects in one place.</p>
+      </section>
+      <!--Semester filter-->
+      <section class="notes-filter-bar">
+        <span class="filter-label">Semester:</span>
+        <button class="filter-chip-active" data-semester="all">All</button>
+        <button class="filter-chip" data-semester="1">Semester 1</button>
+        <button class="filter-chip" data-semester="2">Semester 2</button>
+        <button class="filter-chip" data-semester="3">Semester 3</button>
+        <button class="filter-chip" data-semester="4">Semester 4</button>
+        <button class="filter-chip" data-semester="5">Semester 5</button>
+        <button class="filter-chip" data-semester="6">Semester 6</button>
+      </section>
+      <!--Notes card-->
+      <section class="note-grid">
+        <article class="note-card" data-semester="1">
+          <h2>BCA-101</h2>
+          <p>Mathematics</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="1">
+          <h2>BCA-102</h2>
+          <p>Principle programming and algorithm</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="1">
+          <h2>BCA-103</h2>
+          <p>Computer Fundamentals</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="1">
+          <h2>BCA-104</h2>
+          <p>Principle of management</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="1">
+          <h2>BCA-105</h2>
+          <p>Business Communication</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="2">
+          <h2>BCA-201</h2>
+          <p>Mathematics-II</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="2">
+          <h2>BCA-202</h2>
+          <p>C-Programming</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="2">
+          <h2>BCA-203</h2>
+          <p>Organization Behavior</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="2">
+          <h2>BCA-204</h2>
+          <p>Digital Electronics & Computer Organisation</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="3">
+          <h2>BCA-301</h2>
+          <p>Object Oriented Programming Using C++</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="3">
+          <h2>BCA-302</h2>
+          <p>Data Structure Using C & C++</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="3">
+          <h2>BCA-303</h2>
+          <p>Computer Architecture & Assembly Language</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="3">
+          <h2>BCA-304</h2>
+          <p>Business Economics</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="4">
+          <h2>BCA-401</h2>
+          <p>Computer Graphics</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="4">
+          <h2>BCA-402</h2>
+          <p>Operating System</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="4">
+          <h2>BCA-403</h2>
+          <p>Software Engineering</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="4">
+          <h2>BCA-404</h2>
+          <p>Mathematics-III</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="5">
+          <h2>BCA-501</h2>
+          <p>Introduction to DBMS</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="5">
+          <h2>BCA-502</h2>
+          <p>Java Programming & Dynamic Webpage Design</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="5">
+          <h2>BCA-503</h2>
+          <p>Computer Network</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="5">
+          <h2>BCA-504</h2>
+          <p>Numerical Methods</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="6">
+          <h2>BCA-601</h2>
+          <p>Computer Network Security</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="6">
+          <h2>BCA-602</h2>
+          <p>Information System Analysis Design & Implementation</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="6">
+          <h2>BCA-603</h2>
+          <p>E-Commerce</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+        <article class="note-card" data-semester="6">
+          <h2>BCA-604</h2>
+          <p>Knowledge Management</p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+      </section>
     </main>
-     <footer class="footer">
-    <p>&copy; 2026 Student Hub. Made for students,by a student.</p>
-    <p>Built by Pushkar Joshi(BCA Student).</p>
-     </footer>
-</body>
+    <!--Footer-->
+    <footer class="footer">
+      <p>© 2026 Student Hub. Made for students, by a student.</p>
+      <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
+    </footer>
+  </body>
 </html>
