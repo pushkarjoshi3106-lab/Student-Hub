@@ -3,186 +3,300 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Hub-Notes</title>
+    <title>Student Hub - Notes</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--Navbar -->
+    <!-- NAVBAR -->
     <header>
       <nav class="navbar">
         <div class="logo">
           <span class="logo-icon">📚</span>
           <span class="logo-text">Student Hub</span>
         </div>
-        <ul>
-          <li>
-            <a href="index.html" class="nav-link active">Home</a>
-          </li>
-          <li>
-            <a href="notes.html" class="nav-link active">Notes</a>
-          </li>
-          <li>
-            <a href="subjects.html" class="nav-link">Subjects</a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="notes.html" class="nav-link active">Notes</a></li>
+          <li><a href="subjects.html" class="nav-link">Subjects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
+
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
       </nav>
     </header>
+
     <main>
-      <!--Header-->
+      <!-- Header -->
       <section class="page-header">
         <h1>Study Notes</h1>
-        <p>Find orgainsed notes for your BCA subjects in one place.</p>
+        <p>
+          Find organised notes for your BCA subjects semester-wise in one place.
+        </p>
       </section>
-      <!--Semester filter-->
+
+      <!-- Semester filter -->
       <section class="notes-filter-bar">
         <span class="filter-label">Semester:</span>
-        <button class="filter-chip-active" data-semester="all">All</button>
-        <button class="filter-chip" data-semester="1">Semester 1</button>
-        <button class="filter-chip" data-semester="2">Semester 2</button>
-        <button class="filter-chip" data-semester="3">Semester 3</button>
-        <button class="filter-chip" data-semester="4">Semester 4</button>
-        <button class="filter-chip" data-semester="5">Semester 5</button>
-        <button class="filter-chip" data-semester="6">Semester 6</button>
+        <button class="filter-chip active" data-semester="all">All</button>
+        <button class="filter-chip" data-semester="1">1st</button>
+        <button class="filter-chip" data-semester="2">2nd</button>
+        <button class="filter-chip" data-semester="3">3rd</button>
+        <button class="filter-chip" data-semester="4">4th</button>
+        <button class="filter-chip" data-semester="5">5th</button>
+        <button class="filter-chip" data-semester="6">6th</button>
       </section>
-      <!--Notes card-->
-      <section class="note-grid">
+
+      <!-- Notes cards -->
+      <section class="notes-grid">
+        <!-- SEMESTER 1 -->
         <article class="note-card" data-semester="1">
-          <h2>BCA-101</h2>
-          <p>Mathematics</p>
+          <h2>Computer Fundamental & Office Automation</h2>
+          <p>
+            Basics of computers, operating systems, MS Office tools and office
+            productivity.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="1">
-          <h2>BCA-102</h2>
-          <p>Principle programming and algorithm</p>
+          <h2>Programming Principle & Algorithm</h2>
+          <p>
+            Problem-solving approach, flowcharts, algorithms and programming
+            fundamentals.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="1">
-          <h2>BCA-103</h2>
-          <p>Computer Fundamentals</p>
+          <h2>Mathematics I</h2>
+          <p>
+            Functions, limits, differentiation, integration and basic applied
+            mathematics.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="1">
-          <h2>BCA-104</h2>
-          <p>Principle of management</p>
+          <h2>Principles of Management</h2>
+          <p>
+            Management functions, planning, organizing, staffing and control.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="1">
-          <h2>BCA-105</h2>
-          <p>Business Communication</p>
+          <h2>Business Communication</h2>
+          <p>
+            Written and verbal communication skills for business and office
+            context.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
+        <!-- SEMESTER 2 -->
         <article class="note-card" data-semester="2">
-          <h2>BCA-201</h2>
-          <p>Mathematics-II</p>
+          <h2>C Programming</h2>
+          <p>
+            Basics of C language, control statements, arrays, pointers and
+            functions.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="2">
-          <h2>BCA-202</h2>
-          <p>C-Programming</p>
+          <h2>Digital Electronics & Computer Organisation</h2>
+          <p>
+            Number systems, logic gates, combinational and sequential circuits,
+            CPU basics.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="2">
-          <h2>BCA-203</h2>
-          <p>Organization Behavior</p>
+          <h2>Mathematics II</h2>
+          <p>
+            Advanced calculus, matrices and related topics used in computer
+            science.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="2">
-          <h2>BCA-204</h2>
-          <p>Digital Electronics & Computer Organisation</p>
+          <h2>Financial Accounting & Management</h2>
+          <p>
+            Basics of financial accounting, ledgers, balance sheet, cost and
+            management.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
+        <article class="note-card" data-semester="2">
+          <h2>Organisation Behaviour</h2>
+          <p>
+            Individual and group behaviour in organisations, motivation and
+            leadership.
+          </p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+
+        <!-- SEMESTER 3 -->
         <article class="note-card" data-semester="3">
-          <h2>BCA-301</h2>
-          <p>Object Oriented Programming Using C++</p>
+          <h2>Object Oriented Programming using C++</h2>
+          <p>
+            Classes, objects, inheritance, polymorphism and OOP concepts in C++.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="3">
-          <h2>BCA-302</h2>
-          <p>Data Structure Using C & C++</p>
+          <h2>Data Structure using C & C++</h2>
+          <p>
+            Arrays, linked lists, stacks, queues, trees and searching/sorting.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="3">
-          <h2>BCA-303</h2>
-          <p>Computer Architecture & Assembly Language</p>
+          <h2>Computer Architecture & Assembly Language</h2>
+          <p>
+            CPU organisation, memory, I/O and basics of assembly language
+            programming.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="3">
-          <h2>BCA-304</h2>
-          <p>Business Economics</p>
+          <h2>Business Economics</h2>
+          <p>
+            Demand, supply, cost, market structures and basic economic concepts.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
+        <article class="note-card" data-semester="3">
+          <h2>Elements of Statistics</h2>
+          <p>
+            Data collection, averages, dispersion, correlation and regression
+            basics.
+          </p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+
+        <!-- SEMESTER 4 -->
         <article class="note-card" data-semester="4">
-          <h2>BCA-401</h2>
-          <p>Computer Graphics</p>
+          <h2>Computer Graphics & Multimedia Application</h2>
+          <p>
+            Graphic primitives, 2D/3D transformations, curves, surfaces and
+            multimedia basics.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="4">
-          <h2>BCA-402</h2>
-          <p>Operating System</p>
+          <h2>Operating System</h2>
+          <p>
+            Process management, memory management, file systems and scheduling.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="4">
-          <h2>BCA-403</h2>
-          <p>Software Engineering</p>
+          <h2>Software Engineering</h2>
+          <p>
+            Software development life cycle, requirement analysis, design and
+            testing.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="4">
-          <h2>BCA-404</h2>
-          <p>Mathematics-III</p>
+          <h2>Optimization Techniques</h2>
+          <p>Linear programming, simplex method and optimisation methods.</p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
+        <article class="note-card" data-semester="4">
+          <h2>Mathematics III</h2>
+          <p>
+            Complex variables, sequences and series, Fourier series and
+            applications.
+          </p>
+          <button class="btn-secondary">View Notes</button>
+        </article>
+
+        <!-- SEMESTER 5 -->
         <article class="note-card" data-semester="5">
-          <h2>BCA-501</h2>
-          <p>Introduction to DBMS</p>
+          <h2>Introduction to DBMS</h2>
+          <p>Database concepts, relational model, SQL and normalization.</p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="5">
-          <h2>BCA-502</h2>
-          <p>Java Programming & Dynamic Webpage Design</p>
+          <h2>Java Programming and Dynamic Webpage Design</h2>
+          <p>Core Java, applets/servlets and basics of dynamic web pages.</p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="5">
-          <h2>BCA-503</h2>
-          <p>Computer Network</p>
+          <h2>Computer Network</h2>
+          <p>
+            Network models, topologies, protocols and basic TCP/IP concepts.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="5">
-          <h2>BCA-504</h2>
-          <p>Numerical Methods</p>
+          <h2>Numerical Methods</h2>
+          <p>
+            Numerical solutions of equations, interpolation and numerical
+            integration.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
+        <!-- SEMESTER 6 -->
         <article class="note-card" data-semester="6">
-          <h2>BCA-601</h2>
-          <p>Computer Network Security</p>
+          <h2>Computer Network Security</h2>
+          <p>Cryptography basics, threats, attacks and security mechanisms.</p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="6">
-          <h2>BCA-602</h2>
-          <p>Information System Analysis Design & Implementation</p>
+          <h2>Information System: Analysis, Design & Implementation</h2>
+          <p>
+            System analysis, design methodologies and implementation issues.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="6">
-          <h2>BCA-603</h2>
-          <p>E-Commerce</p>
+          <h2>E-Commerce</h2>
+          <p>
+            E-business models, online payment systems and web-based commerce
+            basics.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
+
         <article class="note-card" data-semester="6">
-          <h2>BCA-604</h2>
-          <p>Knowledge Management</p>
+          <h2>Knowledge Management</h2>
+          <p>
+            Knowledge creation, storage, sharing and knowledge-based systems.
+          </p>
           <button class="btn-secondary">View Notes</button>
         </article>
       </section>
     </main>
-    <!--Footer-->
+
     <footer class="footer">
       <p>© 2026 Student Hub. Made for students, by a student.</p>
       <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
     </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
+    <script src="notes.js"></script>
   </body>
 </html>

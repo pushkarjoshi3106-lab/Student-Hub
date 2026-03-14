@@ -3,70 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Hub-Contact</title>
+    <title>Student Hub – Contact</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--Navbar -->
+    <!-- NAVBAR -->
     <header>
       <nav class="navbar">
         <div class="logo">
           <span class="logo-icon">📚</span>
           <span class="logo-text">Student Hub</span>
         </div>
-        <ul>
-          <li>
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-          <li>
-            <a href="notes.html" class="nav-link">Notes</a>
-          </li>
-          <li>
-            <a href="subjects.html" class="nav-link">Subjects</a>
-          </li>
-          <li>
-            <a href="about.html" class="nav-link">About</a>
-          </li>
-          <li>
-            <a href="contact.html" class="nav-link active">Contact</a>
-          </li>
+
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="notes.html" class="nav-link">Notes</a></li>
+          <li><a href="subjects.html" class="nav-link">Subjects</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
         </ul>
+
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
       </nav>
     </header>
+
     <main>
       <section class="page-header">
         <h1>Contact</h1>
         <p>Have suggestions or want to contribute notes? Reach out here.</p>
       </section>
+
       <section class="contact-section">
         <div class="contact-form-wrapper">
           <form class="contact-form">
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Your name" required />
+              <input id="name" type="text" placeholder="Your name" />
             </div>
+
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="Your email" required />
+              <input id="email" type="email" placeholder="your@email.com" />
             </div>
+
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Your message" required></textarea>
+              <textarea
+                id="message"
+                rows="4"
+                placeholder="Your message..."
+              ></textarea>
             </div>
-            <button type="submit" class="btn-primary-btn">Send Message</button>
+
+            <button type="submit" class="btn primary-btn">Send Message</button>
           </form>
         </div>
+
         <div class="contact-info">
-          <h2>Quick Info</h2>
-          <p>BCA student . CCSU</p>
-          <p>Focused on web development and helping other students with notes and resources.</p>
-          </p>
+          <h2>Quick info</h2>
+          <p>BCA student · CCSU</p>
+          <p>Focused on web development and helping classmates with notes.</p>
         </div>
       </section>
     </main>
-      <footer class="footer">
-    <p>© 2026 Student Hub. Made for students, by students.</p>
-    <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
-  </footer>
+
+    <footer class="footer">
+      <p>© 2026 Student Hub. Made for students, by students.</p>
+      <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="main.js"></script>
   </body>
 </html>
