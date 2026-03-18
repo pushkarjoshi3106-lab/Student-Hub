@@ -23,3 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("studentHubTheme", isDark ? "dark" : "light");
   });
 });
+//scroll progress bar
+const scrollBar = document.getElementById("scroll-progress");
+if (scrollBar) {
+  window.addEventListener("scroll", () => {
+    const scrollTop = window.scrollY;
+    const docHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    scrollBar.style.width = progress + "%";
+  });
+}
+console.log(window.scrollY);
