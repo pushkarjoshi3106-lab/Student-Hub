@@ -45,6 +45,16 @@
           placeholder="Search subjects or topics..."
           aria-label="Search Notes"
         />
+        <!-- progress bar -->
+      </section>
+      <section class="notes-progress-bar">
+        <span class="progress-label">Notes progress:</span>
+        <div class="progress-track">
+          <div class="progress-fill" id="notes-progress-fill"></div>
+          <span id="notes-progress-text" class="progress-text"
+            >0%completed</span
+          >
+        </div>
       </section>
       <!-- Semester filter -->
       <section class="notes-filter-bar">
@@ -67,9 +77,15 @@
             Basics of computers, operating systems, MS Office tools and office
             productivity.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="1">
@@ -78,9 +94,15 @@
             Problem-solving approach, flowcharts, algorithms and programming
             fundamentals.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="1">
@@ -89,9 +111,15 @@
             Functions, limits, differentiation, integration and basic applied
             mathematics.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="1">
@@ -99,9 +127,15 @@
           <p>
             Management functions, planning, organizing, staffing and control.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="1">
@@ -110,9 +144,15 @@
             Written and verbal communication skills for business and office
             context.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <!-- SEMESTER 2 -->
@@ -122,9 +162,15 @@
             Basics of C language, control statements, arrays, pointers and
             functions.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="2">
@@ -133,9 +179,15 @@
             Number systems, logic gates, combinational and sequential circuits,
             CPU basics.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="2">
@@ -144,9 +196,15 @@
             Advanced calculus, matrices and related topics used in computer
             science.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="2">
@@ -155,9 +213,15 @@
             Basics of financial accounting, ledgers, balance sheet, cost and
             management.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="2">
@@ -166,9 +230,15 @@
             Individual and group behaviour in organisations, motivation and
             leadership.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <!-- SEMESTER 3 -->
@@ -177,9 +247,15 @@
           <p>
             Classes, objects, inheritance, polymorphism and OOP concepts in C++.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="3">
@@ -187,9 +263,15 @@
           <p>
             Arrays, linked lists, stacks, queues, trees and searching/sorting.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="3">
@@ -198,9 +280,15 @@
             CPU organisation, memory, I/O and basics of assembly language
             programming.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="3">
@@ -208,9 +296,15 @@
           <p>
             Demand, supply, cost, market structures and basic economic concepts.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="3">
@@ -219,9 +313,15 @@
             Data collection, averages, dispersion, correlation and regression
             basics.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <!-- SEMESTER 4 -->
@@ -231,13 +331,19 @@
             Graphic primitives, 2D/3D transformations, curves, surfaces and
             multimedia basics.
           </p>
-          <a
-            href="pdf/Merged-Computer-Graphics-(www.dreamstudy.tk) (1).pdf"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener noreferer"
-            >View Notes</a
-          >
+          <div class="note-actions">
+            <a
+              href="pdf/Merged-Computer-Graphics-(www.dreamstudy.tk) (1).pdf"
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferer"
+              >View Notes</a
+            >
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="4">
@@ -245,13 +351,19 @@
           <p>
             Process management, memory management, file systems and scheduling.
           </p>
-          <a
-            href="pdf/Full-Operating-System-Notes-(www.dreamstudy.tk).pdf"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener noreferer"
-            >View Notes</a
-          >
+          <div class="note-actions">
+            <a
+              href="pdf/Full-Operating-System-Notes-(www.dreamstudy.tk).pdf"
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferer"
+              >View Notes</a
+            >
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="4">
@@ -260,25 +372,37 @@
             Software development life cycle, requirement analysis, design and
             testing.
           </p>
-          <a
-            href="pdf/Merged-1-2-3-4-Software-Engineering-(www.dreamstudy.tk).pdf"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener noreferer"
-            >View Notes</a
-          >
+          <div class="note-actions">
+            <a
+              href="pdf/Merged-1-2-3-4-Software-Engineering-(www.dreamstudy.tk).pdf"
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferer"
+              >View Notes</a
+            >
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="4">
           <h2>Optimization Techniques</h2>
           <p>Linear programming, simplex method and optimisation methods.</p>
-          <a
-            href="pdf/Full-Optimization-Techniques-Notes-(www.dreamstudy.tk).pdf"
-            class="btn-secondary"
-            target="_blank"
-            rel="noopener noreferer"
-            >View Notes</a
-          >
+          <div class="note-actions">
+            <a
+              href="pdf/Full-Optimization-Techniques-Notes-(www.dreamstudy.tk).pdf"
+              class="btn-secondary"
+              target="_blank"
+              rel="noopener noreferer"
+              >View Notes</a
+            >
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="4">
@@ -287,26 +411,44 @@
             Complex variables, sequences and series, Fourier series and
             applications.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <!-- SEMESTER 5 -->
         <article class="note-card" data-semester="5">
           <h2>Introduction to DBMS</h2>
           <p>Database concepts, relational model, SQL and normalization.</p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="5">
           <h2>Java Programming and Dynamic Webpage Design</h2>
           <p>Core Java, applets/servlets and basics of dynamic web pages.</p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="5">
@@ -314,9 +456,15 @@
           <p>
             Network models, topologies, protocols and basic TCP/IP concepts.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="5">
@@ -325,18 +473,30 @@
             Numerical solutions of equations, interpolation and numerical
             integration.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <!-- SEMESTER 6 -->
         <article class="note-card" data-semester="6">
           <h2>Computer Network Security</h2>
           <p>Cryptography basics, threats, attacks and security mechanisms.</p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="6">
@@ -344,9 +504,15 @@
           <p>
             System analysis, design methodologies and implementation issues.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="6">
@@ -355,9 +521,15 @@
             E-business models, online payment systems and web-based commerce
             basics.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
 
         <article class="note-card" data-semester="6">
@@ -365,9 +537,15 @@
           <p>
             Knowledge creation, storage, sharing and knowledge-based systems.
           </p>
-          <button class="btn-secondary btn-coming-soon" disabled>
-            Coming soon
-          </button>
+          <div class="note-actions">
+            <button class="btn-secondary btn-coming-soon" disabled>
+              Coming soon
+            </button>
+            <label class="note-done">
+              <input type="checkbox" class="note-done-checkbox" />
+              <span>Completed</span>
+            </label>
+          </div>
         </article>
       </section>
     </main>

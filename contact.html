@@ -28,47 +28,72 @@
         <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
       </nav>
     </header>
-
     <main>
       <section class="page-header">
         <h1>Contact</h1>
-        <p>Have suggestions or want to contribute notes? Reach out here.</p>
+        <p>
+          Want to share notes, report an issue, or collaborate on this project?
+          Drop a message here.
+        </p>
       </section>
 
       <section class="contact-section">
         <div class="contact-form-wrapper">
-          <form class="contact-form">
+          <h2 class="contact-title">Send a message</h2>
+          <p class="contact-subtitle">
+            Responses are not automated – this form is for demo / portfolio
+            purposes.
+          </p>
+
+          <form class="contact-form" id="contact-form" novalidate>
             <div class="form-group">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" />
+              <label for="name">Name <span class="required">*</span></label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Your name"
+              />
+              <p class="field-error" data-error-for="name"></p>
             </div>
 
             <div class="form-group">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="your@email.com" />
+              <label for="email">Email <span class="required">*</span></label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+              />
+              <p class="field-error" data-error-for="email"></p>
             </div>
 
             <div class="form-group">
-              <label for="message">Message</label>
+              <label for="message"
+                >Message <span class="required">*</span></label
+              >
               <textarea
                 id="message"
+                name="message"
                 rows="4"
                 placeholder="Your message..."
               ></textarea>
+              <p class="field-error" data-error-for="message"></p>
             </div>
 
             <button type="submit" class="btn primary-btn">Send Message</button>
+            <p id="contact-status" class="contact-status"></p>
           </form>
         </div>
 
         <div class="contact-info">
-          <h2>Quick info</h2>
-          <p>BCA student · CCSU</p>
-          <p>Focused on web development and helping classmates with notes.</p>
+          <h2>Project details</h2>
+          <p>BCA Notes Hub built for CCSU non‑NEP BCA syllabus.</p>
+          <p>Tech stack: HTML, CSS, JavaScript, LocalStorage.</p>
+          <p>Use this form to suggest notes, subjects, or new features.</p>
         </div>
       </section>
     </main>
-
     <footer class="footer">
       <p>© 2026 Student Hub. Made for students, by students.</p>
       <p>Built by <strong>Pushkar Joshi</strong> (BCA Student).</p>

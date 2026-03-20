@@ -57,3 +57,50 @@ if (streakE1) {
   localStorage.setItem("sh_streak", String(streak));
   streakE1.textContent = `Study Streak: ${streak} day${streak > 1 ? "s" : ""}`;
 }
+// Contact form validation (front-end only, demo)
+const contactForm = document.getElementById("contact-form");
+if (contactForm) {
+  const statusEl = document.getElementById("contact-status");
+
+  contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nameInput = contactForm.querySelector("#name");
+    const emailInput = contactForm.querySelector("#email");
+    const messageInput = contactForm.querySelector("#message");
+
+    const errors = {
+      name: "",
+      email: "",
+      message: "",
+    };
+
+    if (!nameInput.value.trim()) {
+      errors.name = "Please enter your name.";
+    }
+    if (!emailInput.value.trim()) {
+      errors.email = "Please enter your email.";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim())) {
+      errors.email = "Please enter a valid email address.";
+    }
+    if (!messageInput.value.trim()) {
+      errors.message = "Please enter a message.";
+    }
+
+    contactForm.querySelectorAll(".field-error").forEach((el) => {
+      const field = el.getAttribute("data-error-for");
+      el.textContent = errors[field] || "";
+    });
+
+    const hasError = Object.values(errors).some((msg) => msg !== "");
+    if (hasError) {
+      statusEl.textContent = "Please fix the highlighted fields.";
+      statusEl.className = "contact-status error";
+      return;
+    }
+
+    statusEl.textContent = "Message sent (demo only, no backend connected).";
+    statusEl.className = "contact-status success";
+    contactForm.reset();
+  });
+}

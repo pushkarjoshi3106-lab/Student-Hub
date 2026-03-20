@@ -510,6 +510,52 @@ main {
   border-color: var(--primary-dark);
   box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35);
 }
+.notes-progress-bar {
+  max-width: 900px;
+  margin: 10px auto 10px auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.progress-label {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+}
+.progress-track {
+  flex: 1;
+  height: 6px;
+  border-radius: 999px;
+  background-color: var(--surface-soft);
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #3b82f6, #22c55e);
+  transition: width 0.2s ease;
+}
+.progress-text {
+  font-size: 0.85rem;
+  color: var(--muted-text);
+}
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+.note-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+.note-done-checkbox {
+  accent-color: var(--accent);
+}
 .notes-filter-bar {
   max-width: 900px;
   margin: 10px auto 8px auto;

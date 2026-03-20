@@ -38,3 +38,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
   applyFilters();
 });
+//notes completion progress
+const doneCheckboxes = document.querySelectorAll(".note-done-checkbox");
+const progressFill = document.getElementById("notes-progress-fill");
+const progressText = document.getElementById("notes-progress-text");
+function updateNotesProgress() {
+  if (!doneCheckboxes.length || !progressFill || !progressText) return;
+  let doneCount = 0;
+  doneCheckboxes.forEach((cb) => {
+    if (cb.checked) doneCount += 1;
+  });
+  const total = doneCheckboxes.length;
+  const percent = total > 0 ? Math.round((doneCount / total) * 100) : 0;
+  progressFill.style.width = percent + "%";
+  progressText.textContent = `${percent}% completed`;
+}
+if (doneCheckboxes.length) {
+  doneCheckboxes.forEach((cb) => {
+    cb.addEventListener("change", updateNotesProgress);
+  });
+  updateNotesProgress();
+}
