@@ -35,3 +35,25 @@ if (scrollBar) {
   });
 }
 console.log(window.scrollY);
+//streak
+const streakE1 = document.getElementById("study-streak");
+if (streakE1) {
+  const today = new Date().toDateString(); //aaj ki date
+  const lastVisit = localStorage.getItem("sh_lastVisit");
+  let streak = parseInt(localStorage.getItem("sh_streak") || "0", 10);
+  if (lastVisit) {
+    //phli baar visit
+    streak = 1;
+  } else {
+    const last = new Date(lastVisit).toDateString();
+    if (last == today) {
+      //same day,streak same
+    } else {
+      //naya din,streak +1
+      streak += 1;
+    }
+  }
+  localStorage.setItem("sh_lastVisit", today);
+  localStorage.setItem("sh_streak", String(streak));
+  streakE1.textContent = `Study Streak: ${streak} day${streak > 1 ? "s" : ""}`;
+}

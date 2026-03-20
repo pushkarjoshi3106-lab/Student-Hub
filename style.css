@@ -177,7 +177,13 @@ main {
   text-align: center;
   isolation: isolate;
 }
-
+/*streak*/
+.hero-streak-text {
+  font-size: 0.85rem;
+  color: #a5b4fc;
+  margin-bottom: 10px;
+  opacity: 0.9;
+}
 /* animated background blobs */
 .hero::before,
 .hero::after {
@@ -478,6 +484,32 @@ main {
 }
 
 /* ========== NOTES PAGE ========== */
+.notes-search-bar {
+  max-width: 900px;
+  margin: 12px auto 6px auto;
+  padding: 0 20px;
+}
+#notes-search {
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border-subtle);
+  background-color: var(--surface);
+  color: var(--text-color);
+  font-size: 0.95rem;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+#notes-search::placeholder {
+  color: var(--muted-text);
+}
+#notes-search:focus {
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.35);
+}
 .notes-filter-bar {
   max-width: 900px;
   margin: 10px auto 8px auto;
@@ -634,6 +666,19 @@ main {
   box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
 }
 
+.btn-coming-soon {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background-color: var(--surface-soft);
+  color: var(--muted-text);
+  box-shadow: none;
+}
+
+.btn-coming-soon:hover {
+  transform: none;
+  box-shadow: none;
+  background-color: var(--surface-soft);
+}
 .btn-secondary:hover {
   background-color: var(--primary-dark);
   color: #ffffff;
